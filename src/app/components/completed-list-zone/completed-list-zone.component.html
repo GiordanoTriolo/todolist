@@ -1,0 +1,26 @@
+<div class="card" *ngIf="buffer; else elseBlock1">
+  <div class="card-body">
+    Removing task...
+  </div>
+</div>
+
+<ng-template #elseBlock1>
+  <div class="card" *ngIf="completedListArr.length > 0; else elseBlock2">
+    <div class="card-body">
+      <ul class="list-group list-group-flush" *ngFor="let task of completedListArr">
+        <li class="list-group-item">
+          {{task.title}}
+          <button type="button" (click)="removeTask(task)" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #elseBlock2>
+  <div class="card">
+    <div class="card-body">
+      There are no completed tasks... Are you procrastinating?
+    </div>
+  </div>
+</ng-template>
