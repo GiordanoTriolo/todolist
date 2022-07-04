@@ -21,12 +21,17 @@ export class InsertComponent implements OnInit {
   }
 
   add(): void{
+    if(this.title == ''){
+      alert('Come on, write something more than a blank space...');
+      return;
+    }
     this.buffer = true;
     setTimeout(() => {
       this.buffer = false;
       let newTask= new ToDoClass(this.id, this.title, this.completed);
       this.toDoService.addTask(newTask);
       this.id++;
+      this.title = '';
     }, 2000);
   }
 }

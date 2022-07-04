@@ -1,14 +1,12 @@
-<nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+<nav class="navbar navbar-expand-lg bg-dark sticky-top">
+  <div class="container-fluid text-center ">
+      <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <button type="button" class="btn btn-primary me-3" [routerLink]="['/todolist']" routerLinkActive="router-link-active"  href="#">To Do List</button>
+          <button type="button" class="btn btn-secondary me-3" [routerLink]="['/todolist']" routerLinkActive="router-link-active"  href="#">To Do List</button>
         </li>
         <li class="nav-item">
-          <button type="button" class="btn btn-primary" [routerLink]="['/completedlist']" routerLinkActive="router-link-active"  href="#">Completed</button>
+          <button type="button" class="btn btn-secondary" [routerLink]="['/completedlist']" routerLinkActive="router-link-active"  href="#">Completed</button>
         </li>
       </ul>
     </div>
-  </div>
 </nav>

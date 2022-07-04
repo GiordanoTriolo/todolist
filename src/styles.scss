@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background-image: url(assets/img/lavagna.jpg);
+  color: rgba(205, 205, 205, 0.781);
+
+  .card, .list-group-item{
+    background-color: transparent;
+    color: rgb(221, 221, 221);
+
+    strong{
+      @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto&display=swap');
+      font-family: 'Amatic SC', cursive;
+      font-size: 2rem;
+    }
+  }
+
+}
+
+

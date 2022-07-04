@@ -10,7 +10,7 @@
       <ul class="list-group list-group-flush" *ngFor="let task of completedListArr">
         <li class="list-group-item">
           {{task.title}}
-          <button type="button" (click)="removeTask(task)" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
+          <button type="button" (click)="removeTask(task)" class="btn btn-danger btn-sm ms-2"><i class="bi bi-trash-fill"></i></button>
         </li>
       </ul>
     </div>

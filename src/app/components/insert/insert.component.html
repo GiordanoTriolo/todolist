@@ -5,10 +5,15 @@
 </div>
 
 <ng-template #elseBlock>
-<div class="card mt-2">
-  <div class="card-body">
-    <input type="text" [(ngModel)]="title" placeholder="Write a new task">
-    <button type="button" (click)="add()" class="btn btn-dark btn-sm"><i class="bi bi-plus"></i></button>
+  <div class="card mt-2">
+    <div class="card-body">
+      <div class="input-group mb-3 w-50 mx-auto">
+        <input type="text" [(ngModel)]="title" class="form-control" placeholder="Write a new task" aria-label="new task" aria-describedby="button-addon2">
+        <button class="btn btn-secondary" (click)="add()" type="button" id="button-addon2"><i class="bi bi-plus"></i></button>
+      </div>
+    </div>
   </div>
-</div>
-</ng-template>
+  </ng-template>
+
+
+
